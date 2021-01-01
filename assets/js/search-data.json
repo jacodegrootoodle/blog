@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Database Iam User",
-            "content": "Create IAM user for a Postgres database . This post assumed you have IAM authentication enabled on your Postgres instance . Create a IAM user | CREATE USER jacodegroot; . Add IAM user to the rds_admin role to allow the use of IAM authentication | GRANT rds_iam TO jacodegroot; . Add IAM user to relevant role | GRANT rds_superuser TO jacodegroot; .",
+            "content": "Create IAM user for a Postgres database . This post assumed you have IAM authentication enabled on your Postgres instance . Create a IAM user . CREATE USER jacodegroot; | . | Add IAM user to the rds_admin role to allow the use of IAM authentication . GRANT rds_iam TO jacodegroot; | . | Add IAM user to relevant role . GRANT rds_superuser TO jacodegroot; | . | .",
             "url": "https://jacodegrootoodle.github.io/blog/2020/12/31/Database-IAM-User.html",
             "relUrl": "/2020/12/31/Database-IAM-User.html",
             "date": " • Dec 31, 2020"

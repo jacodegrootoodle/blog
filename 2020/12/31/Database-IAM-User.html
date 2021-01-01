@@ -90,25 +90,29 @@ window.onload = wrap_img;
 
 <p>This post assumed you have IAM authentication enabled on your Postgres instance</p>
 
-<ol>
-  <li>Create a IAM user</li>
-</ol>
+<ul>
+  <li>
+    <p>Create a IAM user</p>
 
-<p>CREATE USER jacodegroot;</p>
+    <ul>
+      <li>CREATE USER jacodegroot;</li>
+    </ul>
+  </li>
+  <li>
+    <p>Add IAM user to the rds_admin role to allow the use of IAM authentication</p>
 
-<ol>
-  <li>Add IAM user to the rds_admin role to allow the use of IAM authentication</li>
-</ol>
+    <ul>
+      <li>GRANT rds_iam TO jacodegroot;</li>
+    </ul>
+  </li>
+  <li>
+    <p>Add IAM user to relevant role</p>
 
-<p>GRANT rds_iam TO jacodegroot;</p>
-
-<ol>
-  <li>Add IAM user to relevant role</li>
-</ol>
-
-<blockquote>
-  <p>GRANT rds_superuser TO jacodegroot;</p>
-</blockquote>
+    <ul>
+      <li>GRANT rds_superuser TO jacodegroot;</li>
+    </ul>
+  </li>
+</ul>
 
   </div><a class="u-url" href="/blog/2020/12/31/Database-IAM-User.html" hidden></a>
 </article>
